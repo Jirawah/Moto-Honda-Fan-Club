@@ -1,0 +1,23 @@
+Dans le cadre de ma formation de développeur web, nos formateurs nous ont demandé de concevoir un site web en mettant en corélation nos compétences ou softskills en lien avec des persona (représentant de potentiels recruteurs).
+Dans ce contexte, j'ai décidé de créer un site en rapport avec les motos de la marque Honda, cette passion me permet d'évoquer mes compétances en débrouillardise et en adaptabilité.
+
+Il s'agit de mon tout premier site développé en langage de balisage et de programation et qui suit toutes les étapes de la coneption d'un site web :
+	Plannification et préparation (premier sprint 3 jours)
+		- Diagramme de Gantt
+		- Benchmark (concurrentiel et performances)
+ 		- Création de persona
+  		- Brandboard
+	
+	Conception visuel format desktop, tablette et mobile (deuxième sprint 5 jours)
+   		- Wireframe
+    		- Maquettes
+     		- Prototypage
+
+	Développement de la partie front-end (troisième sprint 10 jours)
+      		- Développement en HTML, CSS et Javascript
+
+	BDD et back-end (en cours):
+ 		- Conception de la base de données
+		- Connexion à la base de données via PHP
+   		- Interaction avec la base de données 
+		- Gestion des authentifications et des autorisations
