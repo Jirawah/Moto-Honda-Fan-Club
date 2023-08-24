@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*permet de définir une police d'écriture particulière*/
+@font-face {
+    font-family: "RespondentBlack_PERSONAL_USE_ONLY";
+    src: url('polices/respondent/RespondentBlack_PERSONAL_USE_ONLY.otf') format("truetype");
+}
+
+body {
+    position: absolute;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    font-family: 'poppins';
+    font-size: 16px;
+}
+
+h1, h2 {
+    color: #e2e2df;
+    max-width: 900px;
+}
+
+p {
+    color: #a7a9be;
+    max-width: 900px;
+}
+
+h1 {
+    font-family: 'pricedown';
+    font-size: 66px;
+    color: #e2e2df;
+    text-shadow: -2px -2px 0 #000000,  
+                2px -2px 0 #000000,
+               -2px 2px 0 #000000,
+                2px 2px 0 #000000;
+}
+
+h2 {
+    font-family: 'RespondentBlack_PERSONAL_USE_ONLY';
+    font-size: 52px;
+}
+
+.navbar {
+    position: fixed;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #16161A;
+    border-bottom: 3px solid #e2e2df;
+    z-index: 6;
+}
+
+.navbar a {
+    color: #16161A;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    background-color: #e2e2df;
+    border-radius: 45px 45px 45px 45px;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.nav-links ul li:not(:last-child) {
+    margin-right: 0px;
+    padding-right: 60px;
+    border-right: 3px solid #16161A;
+ }
+  
+.nav-links ul li a {
+    padding: 0 20px;
+}
+
+.btn-connexion {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    font-family: 'RespondentBlack_PERSONAL_USE_ONLY';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #EF7DB0;
+    border: none;
+    color: #16161A;
+    padding: 16px 38px;
+    border-radius: 0px 0px 0px 45px;
+    cursor: pointer;
+    z-index: 6;
+}
+  
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0; /* Place le footer en bas de la page */
+    left: 0;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #16161A;
+    border-top: 3px solid #e2e2df;
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #16161A;
+}
+
+.footer a {
+    font-family: 'RespondentBlack_PERSONAL_USE_ONLY';
+    color: #e2e2df;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.footer .footer-links ul {
+    display: flex;
+}
+
+.footer .footer-links ul li {
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.footer-links ul li:not(:last-child) {
+    margin-right: 0px;
+    padding-right: 100px;
+    border-right: 3px solid #e2e2df;
+ }
+
+.img-footer {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 130px;
+    bottom: 200px;
+}
+
+*::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+.slider-1 {
+    max-width: 800px;
+    margin-left: 30px;
+    margin-top: -180px;
+    overflow: hidden;
+}
+
+.slider-1 .slider {
+    animation: slider-1 30s infinite ease-in-out;
+    display: flex;
+    justify-content: space-between; 
+}
+  
+.slider-1 p {
+    flex-shrink: 0;
+    padding: 400px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #f1f1f1;
+}
+  
+  
+  /* 
+     5% par transition, nombre choisi arbitrairement.
+     reste divisé par nb de pauses
+     80(%) / 4 = 20(%) par pause
+  */
+  
+@keyframes slider-1 {
+    0%,
+    20% {
+      transform: translateX(0);
+    }
+    25%,
+    45% {
+      transform: translateX(-100%);
+    }
+    50%,
+    70% {
+      transform: translateX(-200%);
+    }
+    75%,
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+} 
+
+#cbrslider1 {
+    background-image: url(img/CBR600rr\ pic1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 90%;
+    background-position: center center;
+}
+
+#cbrslider2 {
+    background-image: url(img/CBR600rr\ pic2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 92%;
+    background-position: center center;
+}
+
+#cbrslider3 {
+    background-image: url(img/cbr600rr\ pic3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    background-position: center center;
+}
+
+#cbrslider4 {
+    background-image: url(img/cbr600rr\ pic4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    background-position: center center;
+}
+
+#logocbr600rr {
+    display: flex;
+    margin-top: 120px;
+    margin-left: 28%;
+}
+
+.infomotos-container {
+    display: flex;
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 45%;
+}
+
+.infomotos {
+    max-width: 425px;
+    padding: 2%;
+}
+
+h2 {
+    position: absolute;
+}
+
+p {
+    text-align: justify;
+}
+
+#atslider1 {
+    background-image: url(img/africa_twin_pic1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 90%;
+    background-position: center center;
+}
+
+#atslider2 {
+    background-image: url(img/africa_twin_pic2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 92%;
+    background-position: center center;
+}
+
+#atslider3 {
+    background-image: url(img/africa_twin_pic3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 80%;
+    background-position: center center;
+}
+
+#atslider4 {
+    background-image: url(img/africa_twin_pic4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 80%;
+    background-position: center center;
+}
+
+#logoafricatwin {
+    display: flex;
+    margin-top: -30px;
+    margin-left: 33%;
+    width: 28%;
+}
+
+.btp-btn {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-family: 'RespondentBlack_PERSONAL_USE_ONLY';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #EF7DB0;
+    border: none;
+    color: #16161A;
+    padding: 13px 22px;
+    border-radius: 0px 0px 45px 0px;
+    cursor: pointer;
+    z-index: 7;
+}
+  
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
