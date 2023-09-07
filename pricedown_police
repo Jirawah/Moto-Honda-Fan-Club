@@ -1,0 +1,280 @@
+/*incorporer pricedown*/
+
+@font-face {
+    font-family: "pricedown";
+    src: url('polices/pricedown/pricedown\ bl.otf') format("truetype");
+    font-weight: 900;
+}
+
+.tittle {
+    -webkit-text-stroke: 2px #16161A;
+}
+
+
+
+
+
+
+
+.tittle {
+    border-right: solid #16161A;
+}
+
+.container {
+    max-width: 1520;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #16161A;
+    padding: 10px;
+    border-radius: 45px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    padding: 0%;
+    padding-top: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 3%;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-1 {
+    position: relative;
+    margin: 8%;
+    border: 1px solid #e2e2df;
+    z-index: 1;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: slider-1 12s infinite ease-in-out;
+}
+
+.slider-1 .slider {
+    display: flex;
+}
+
+.slider-1 img {
+    flex-shrink: 0;
+    /*permet de ne pas rétrécir le conteneur et l'obliger à dépasser de son parent si besoin*/ 
+    margin: auto;
+}
+
+/*slider fonctionnement : 5% par transition, 28.3% par pause car 3 <img>*/
+@keyframes slider-1 {
+    0%, /*on commence avec une pause*/
+    28.3% { /*on suit avec un premier cicle*/
+        transform: translateX(0);
+    }  
+    33.3%, /*deuxième pause*/
+    61.6% { /*deuxième cicle*/
+        transform: translateX(-100%);
+    } 
+    66.3%, 
+    94.6% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+
+
+
+<div class="slider-container slider-1" id="sli">
+<div class="slider">
+    <img src="img/CBR600rr pic1.png" alt="cbr600rrpic1" id="img1" >
+    <img src="img/CBR600rr pic2.png" alt="cbr600rrpic2" id="img2">
+    <img src="img/decorations-murales-peintures-toile-motogp-repsol.webp" alt="cbr600rrpic3" id="img3">
+</div>
+</div>
+
+
+
+
+
+
+______________________________________________________________________________________________________________________
+
+
+.container {
+    padding: 18rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider img {
+    flex: 1 0 90%;
+    scroll-snap-align: start;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #EF7DB0;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+<section class="container">
+<div class="slider-wrapper">
+    <div class="slider">
+        <img id="cbrp1" src="img/CBR600rr pic1.png" alt="cbr600rrpic1">
+        <img id="cbrp2" src="img/CBR600rr pic2.png" alt="cbr600rrpic2">
+        <img id="cbrp3" src="img/cbr600rr pic3.png" alt="cbr600rrpic3">
+    </div>
+    <div class="slider-nav">
+        <a href="#cbrp1"></a>
+        <a href="#cbrp2"></a>
+        <a href="#cbrp3"></a>
+    </div>
+</div>
+</section>
+
+___________________________________________________________________________________________________
+
+*::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+.slider-1 {
+    max-width: 800px;
+    margin: 100px auto;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+}
+
+.slider-1 .slider {
+    animation: slider-1 30s infinite ease-in-out;
+    display: flex;
+    justify-content: space-between; 
+    /* Si on veut faire glisser vers la droite */
+    /* Il faut aussi changer l'animation(transform) en valeurs positives */
+    /* flex-direction: row-reverse; */
+}
+  
+.slider-1 p {
+    flex-shrink: 0;
+    padding: 300px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #f1f1f1;
+}
+  
+  
+  /* 
+     5% par transition, nombre choisi arbitrairement.
+     reste divisé par nb de pauses
+     80(%) / 4 = 20(%) par pause
+  */
+  
+@keyframes slider-1 {
+    0%,
+    20% {
+      transform: translateX(0);
+    }
+    25%,
+    45% {
+      transform: translateX(-100%);
+    }
+    50%,
+    70% {
+      transform: translateX(-200%);
+    }
+    75%,
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+} 
+
+#cbrslider1 {
+    background-image: url(img/CBR600rr\ pic1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: px;
+}
+
+#cbrslider2 {
+    background-image: url(img/CBR600rr\ pic2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#cbrslider3 {
+    background-image: url(img/cbr600rr\ pic3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+<div class="slider-container slider-1">
+<div class="slider">
+    <p id="cbrslider1"></p>
+    <p id="cbrslider2"></p>
+    <p id="cbrslider3"></p>
+    <p id="cbrslider1"></p>
+
+</div>
+</div>

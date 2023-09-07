@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Moto Fan Club Bienvenue !!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <navc class="backtoportfolio-btn">
+            <button onclick="window.location.href = 'http://13.formation.mode83.net/antoine.pouzeratte/portfolio/';" class="btp-btn">
+                <img src="img/btn_retour-pf.png" alt="Retour au portfolio" class="icon">
+                Retour au portfolio
+            </button>
+        </navc>
+        <nav class="navbar">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.php" class="tittle">Accueil</a></li>
+                    <li><a href="espaceperso.php" class="tittle">Espace personnel</a></li>
+                    <li><a href="forum.php" class="tittle">forum</a></li>
+                    <li><a href="motos_presentees.php" class="tittle">Motos présentées</a></li>
+                    <li><a href="enregistrement.php" class="tittle">S'enregistrer</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="btn-container">
+            <button class="btn-connexion">
+                <img src="img/btn_connexion.png" alt="connexion button" class="btn-icon"><a href="connexion.php">
+                Connexion</a>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <img src="img/logo.png" alt="logo" id="logo">
+        </div>
+        <div class="txt">
+            <div>
+                <h1 id="acc">ACCUEIL</h1>
+            </div>
+            <div>
+                <h2 id="bie">Bienvenue</h2>
+            </div>
+            <div>
+                <p>Bienvenue sur le site Moto Honda Fan Club dédié à la légendaire marque de motos ! <br><br>
+                    Vous êtes ici au cœur d'une expérience spécialement conçue pour tous les amateurs de deux-roues et les passionnés de sensations fortes. Préparez-vous à être transporté dans
+                    l'univers captivant des motos Honda, où la performance et l'innovation se rencontrent pour vous offrir des moments inoubliables sur la route. <br><br>
+                    Notre site est une véritable vitrine dédiée à la marque emblématique Honda, regorgeant d'informations sur tous les modèles de motos jamais créés par cette entreprise visionnaire.
+                    Que vous soyez un fervent admirateur des motos classiques ou un enthousiaste des dernières innovations, vous trouverez ici tout ce que vous recherchez. <br><br>
+                    Explorez notre collection exhaustive de motos Honda, des modèles emblématiques aux dernières versions, et plongez dans l'histoire riche de cette marque qui a repoussé les limites
+                    de l'industrie motocycliste depuis des décennies.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="img-footer">
+            <img src="img/img_footer.png" alt="image footer" class="img-footer-cla">
+        </div>
+        <nav class="footer">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#" class="tittle_footer" id="con">Contact</a></li>
+                    <li><a href="#" class="tittle_footer">Données personnelles</a></li>
+                    <li><a href="#" class="tittle_footer">Gestion des cookies</a></li>
+                    <li><a href="#" class="tittle_footer">Informations légales</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
